@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sashurina Maria PW3</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+/* Style the header */
+* {
+  box-sizing: border-box;
+}
+header {
+  background-color: #204bda;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+}
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  background: #4f7ec9;
+  padding: 10px;
+  height: 2000px;
+}
+article {
+  float: left;
+  padding: 10px;
+  width: 85%;
+  height: 2000px;
+  background-color:	#889fe3	;
+   /* only for demonstration, should be removed */
+}
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Style the footer */
+footer {
+  background-color: #0e1dc1;
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 1100px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+p.dotted {border-style: dotted;
+border-color:rgb(243, 243, 245);
+width: 600 px;}
+p.solid {border-style: solid;
+border-color:white;
+}
+p.double {border-style: double;
+border-color:rgb(243, 243, 245);
+width: 500 px;
+}
+p.inset {border-style: inset;
+  border-color:rgb(55, 69, 180);}
+.fDiv {
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  border: solid black;
+  background-color: rgb(113, 141, 221);
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.sDiv {
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  border: dashed rgb(15, 29, 220);
+  background-color: rgb(98, 128, 213);
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.tDiv {
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  border: outset rgb(248, 246, 246);
+  background-color: rgb(63, 98, 193);
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.example1{
+  background-image: url("t.png");
+}
+.example2{
+  background-image: url("t.png"), url("csss.png");
+  opacity: 0.75;
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+     right,
+     bottom left;
+  
+}
+</style>
+
+</head>
+<body>
+
+<header>
+  <h1><p class="dotted">Sashurina Maria PW3</p></h1>
+</header>
+<section>
+  <nav>
+    <ul>
+      <li><a href="#1">Q1</a></li>
+      <li><a href="#2">Q2</a></li>
+      <li><a href="#3">Q3</a></li>
+      <li><a href="#4">Task 4</a></li>
+    </ul>
+  </nav>
+  <article>
+    <p ><center><img height="140" src="csss.png" alt="css" ></center></p>
+
+    <div class="fDiv"><h2 id="1">1. Research for and describe the ways to open developers console in Mozilla Firefox and Safari.</h2>
+    <h3><p class="double"><b>Opening Developer Console in Mozilla Firefox: </b></h3></p>
+    <dd><p>- Method 1: Pressing the keyboard shortcut "Ctrl + Shift + I" (or "Cmd + Opt + I" on macOS) will open the Developer Tools panel, where you can find the Console tab.</p></dd>
+    <dd><p>- Method 2: Go to the menu by clicking the three horizontal lines in the top-right corner, then select "Web Developer" and click on "Web Console".</p></dd>
+    <h3><p class="double"><b>Opening Developer Console in Safari:</b></h3></p>
+    <dd><p>- Method 1: Pressing the keyboard shortcut "Option + Cmd + C" will open the Developer Tools panel, where you can find the Console tab.</p></dd>
+    <dd><p>- Method 2: Go to the menu by clicking "Develop", then select "Show Error Console".</p></dd></div>
+    
+
+   <div class="sDiv"> <h2 id="2">2. What way of including internal links into the HTML page you would consider generally preferable: absolute or relative links? Describe use cases for choosing absolute links and choosing relative links.</h2>
+    <p>Generally, it is preferable to use relative links over absolute links for internal links:<p>
+    <dt><p><b>- Relative links:</b> These links are relative to the current page's location within the directory structure. They are shorter and more flexible, making them easier to manage and maintain. Relative links are commonly used when linking to other pages within the same website.</p></dt>
+    <dt><p><b>- Absolute links:</b> links include the full URL, including the protocol (e.g., http://) and domain. Absolute links are necessary when linking to external websites or when the page structure might change.</p></dt>
+    <h3><p class="inset"><b>Use cases for choosing absolute links: </b></h3></p>
+    <dd><p> - Linking to other websites or web pages outside of your domain.</p></dd>
+    <dd><p> - When the page structure might change frequently, and you want to ensure the link remains intact.</p></dd>
+    <h3><p class="inset"><b>Use cases for choosing relative links: </b></h3></p>
+    <dd><p> - Linking to other pages within the same website.</p></dd>
+    <dd><p> - When the website structure is unlikely to change, making it easier to manage and maintain links.</p></dd>
+    <dd><p> - When the page is hosted locally and not yet deployed to a live server.</p></dd></div>
+   
+  <div class="tDiv"> <h2 id="3">3. Research and write about image formats used in web-development. What is the difference between JPG, GIF and PNG formats? What is WEBP image type? What is SVG?</h2>
+    <dt><p><b>- JPG (or JPEG): </b> It is a lossy compression format commonly used for photographs or complex images with many colors. JPGs support millions of colors and smaller file sizes, but they sacrifice some image quality.</p></dt>
+    <dt><p><b>- GIF: </b> It is a lossless compression format commonly used for simple animations and graphics with limited colors. GIFs support transparency and animation but have a limited color palette.</p></dt>
+    <dt><p><b>- PNG: </b> It is a lossless compression format commonly used for images with transparency support. PNGs preserve image quality but often have larger file sizes compared to JPGs.</p></dt>
+    <dt><p><b>- WEBP: </b>  It is a newer image format created by Google. WEBP supports both lossy and lossless compression and generally provides smaller file sizes while maintaining good image quality. It is supported by modern browsers but may not be compatible with older browsers.</p></dt>
+    <dt><p><b>- SVG: </b> It stands for Scalable Vector Graphics. SVG is a vector image format that uses XML-based markup to describe graphics. Unlike raster images (JPG, GIF, PNG), SVGs can be scaled up or down without losing quality. They are well-suited for logos, icons, and other graphics that require flexibility in size and resolution. SVGs can be animated and modified using CSS and JavaScript as well.</p></dt></div>
+   
+    <p id="4" style="background-color: rgb(54, 77, 171);color: white;">a) euhfouwfhoqheo fdolor sit amet, consectetur adipiscing elit. Duis vestibulum varius magna ac lacinia. Suspendisse potenti. Sed ultricies velit ut neque fermentum, a accumsan dui malesuada. Nullam convallis metus eget dolor vestibulum, ut varius tortor sollicitudin.iqisfcnjsdbouhwef8oyq9 duq 9widje;hearug heor8ugi[pwjd pkcmsdlnv;kdfngkuho</p>
+   <p style="background-image: linear-gradient(to right, #d5ccb1, #091cec); color: white;">b) euhfouwfhoqhe dolor sit amet, consectetur adipiscing elit. Duis vestibulum varius magna ac lacinia. Suspendisse potenti. Sed ultricies velit ut neque fermentum, a accumsan dui malesuada. Nullam convallis metus eget dolor vestibulum, ut varius tortor sollicitudin.ofiqisfcnjsdbo uhwefv yyfyg8oyq9 duq9widje;hearugheor8ugi[p wjdpkcmsdlnv;kdfngkuho</p>
+   <p style="background-image: repeating-linear-gradient( 70deg, #822500 , #d9f315 10px, #22b417 10px,#0a818e 10px, #450e8e 20px); color: white;">c) euhfouwfh oqhdolor sit amet, consectetur adipiscing elit. Duis vestibulum varius magna ac lacinia. Suspendisse potenti. Sed ultricies velit ut neque fermentum, a accumsan dui malesuada. Nullam convallis metus eget dolor vestibulum, ut varius tortor sollicitudin.eofiqisfcnjsdbouhwef8oy q9duq9widje;hear ugheor8ugi[pwjdpkc msdlnv;kdfngkuho</p>
+   <div class="example1">          
+    <p>d) euhfouwfhoqdolor sit amet, consectetur adipiscing elit. Duis vestibulum varius magna ac lacinia. Suspendisse potenti. Sed ultricies velit ut neque fermentum, a accumsan dui malesuada. Nullam convallis metus eget dolor vestibulum, ut varius tortor sollicitudin.h eofiqisfcnjsdbouhwef8hj goyq9duq9widje;hearu gheor8ugi[pwjdpkc msdlnv;kdfngkuho</p>  
+    </div>
+    <div class="example2">
+   <p>e) euhfouwfhoqdolor sit amet, consectetur adipiscing elit. Duis vestibulum varius magna ac lacinia. Suspendisse potenti. Sed ultricies velit ut neque fermentum, a accumsan dui malesuada. Nullam convallis metus eget dolor vestibulum, ut varius tortor sollicitudin.heofiqisfcnjsdbouhwefyfuyf8oyq9duq9 widje;hearugheor8ugi[pwjdpkcmsdl nv;kdfngkuho</p>
+  </div>
+
+  </article>
+</section>
+
+<footer>
+
+<p>This lab was very interesting and easier than the last one. I've learned how to use borders and other things, and hope that i did evething correctly</p>
+
+
+</footer>
+
+</body>
+</html>
+
