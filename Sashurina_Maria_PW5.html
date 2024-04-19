@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sashurina Maria PW3</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+/* Style the header */
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #204bda;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  padding: 1px; 
+}
+nav {
+justify-content: center;
+margin-bottom: 20px;
+        }       
+nav a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+        }
+article {
+  
+  padding: 10px;
+  width: auto;
+  height: auto;
+  background-color:	#889fe3	;
+   /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Style the footer */
+footer {
+  background-color: #0e1dc1;
+  padding: 10px ;
+  font-size: 20px;
+  
+  color: white;
+  
+}
+
+li {
+  display: inline;
+}
+
+.solid {border-style: solid;
+border-color:white;
+}
+
+.fDiv {
+  padding: 10px ;
+  border: solid black;
+  background-color: rgb(113, 141, 221);
+  margin: 10px ;
+}
+.sDiv {
+  padding: 10px ;
+  border: solid rgb(15, 29, 220);
+  background-color: rgb(98, 128, 213);
+  margin: 10px ;
+}
+.tDiv {
+  padding: 10px ;
+  border: solid rgb(248, 246, 246);
+  background-color: rgb(63, 98, 193);
+  margin: 10px ;
+}
+img {
+  margin: 10px 10px;
+  float: right;
+  max-width: 400px;
+    }
+</style>
+
+</head>
+<body>
+
+<header>   
+  <h2> Questions :</h2> 
+  <nav>
+  <ul>
+    <li><a href="#1">a)</a></li>
+    <li><a href="#2">b)</a></li>
+    <li><a href="#3">c)</a></li>
+    <li><a href="#4">d)</a></li>
+    <li><a href="#5">e)</a></li>
+    </ul>
+  </nav>
+</header>
+
+  
+  <article>
+    <h1><center>Answers to Questions</center></h1>
+    <section class="fDiv">
+    
+      <h3 id="1">a. What is a box model in CSS. Give the box-sizing property definition</h3>
+      <p>The CSS box model is a fundamental concept that describes how elements are displayed on a webpage. It consists of the content area, padding, border, and margin.</p>
+      <p><b>box-sizing:</b> The box-sizing property in CSS determines how the total width and height of an element is calculated. The default value is <em>content-box</em>, where the width and height of the element only include the content but not the padding, border, or margin. By setting the value to <em>border-box</em>, the padding and border are included in the total width and height of the element.</p>
+      <img src="1.png" alt="Box Model in CSS">
+      
+    </section>
+
+   <section class="sDiv"> 
+    <h3 id="2">b. What is a “clearfix hack” and when does it need to be applied</h3>
+    <p>A "clearfix hack" is a technique used in CSS to clear the floated child elements within a container. It is necessary when a parent element containing floated child elements does not expand to the height of its children, causing layout issues such as elements overlapping or not displaying correctly.</p>
+    <img src="2.png" alt="Clearfix Hack Example">
+    <img src="3.png" alt="Clearfix Hack Example2">
+  </section>
+   
+  <section class="tDiv">
+     <h3 id="3">c. What is a “margin collapse” and what are the use cases for margin: auto and negative margin values</h3>
+     <p>Margin collapse in CSS occurs when the top and bottom margins of two adjacent elements overlap, collapsing into a single margin. This can affect the spacing between elements and needs to be considered in layout design.</p>
+     <p>Using margin: auto; on an element horizontally centers it within its parent container. Negative margin values can be used to create overlapping effects or adjust the positioning of elements in a layout.</p>
+     <img src="4.png" alt="Margin Collapse Example">
+    </section>
+  
+     <section class="fDiv">
+      <h3 id="4">d. What was the problem with achieving Holy Grail layout</h3>
+      <p>The Holy Grail layout was a popular web design challenge involving creating a layout with a header, footer, and three columns, all of which are fluid and have equal height regardless of the content. The main issue was achieving equal height columns without using hacks or extra markup.</p>
+    <p><img src="5.png" alt="Holy Grail Layout Problem"></p>
+      <p><img src="6.jpeg" alt="Holy Grail Layout Problem"></p>
+    </section>
+
+      <section class="sDiv">
+        <h3 id="5">e. What are the modern ways to achieve Holy Grail layout</h3>
+        <p>Modern methods to achieve the Holy Grail layout include using Flexbox or CSS Grid to create a responsive and flexible layout that adjusts to different screen sizes. These CSS features offer more efficient and cleaner solutions compared to older methods.</p>
+        <img src="7.png" alt="Modern Holy Grail Layout Solution">
+      </section>
+
+        
+  </article>
+
+
+<footer>
+
+<p>Sashurina Maria, web-desing, 18.04.2024, Visual Studio Code </p>
+
+</footer>
+
+</body>
+</html>
+
