@@ -1,0 +1,184 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<title>Sashurina Maria PW3</title> 
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<style> 
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 20px;
+}
+
+.logo { 
+    float: left; 
+    margin-left: 20px; 
+    color: green; 
+    font-size: 80px; 
+} 
+.logo2 { 
+    float: left; 
+    color: grey; 
+    font-size: 40px; 
+} 
+header { 
+    background-color: white; 
+    padding-bottom: 120px;  
+    padding-top: 10px; 
+} 
+nav { 
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 10px;
+    font-size: 18px;
+}        
+nav a { 
+    background-color: green; 
+    color: white; 
+    padding: 10px 30px; 
+    text-decoration: none; 
+} 
+.img { 
+    margin: 10px 20px; 
+    float: left; 
+    width: 40%;
+    min-width: 400px;
+}  
+
+
+.right { 
+    font-size: 18px; 
+    float: left; 
+    margin-right: 10px;
+    color: rgb(63, 64, 64);
+}
+.container { 
+    gap: 5px 5px; 
+    float: right; 
+    display: flex; 
+    flex-wrap: wrap; 
+    padding: 10px 20px; 
+}
+.left{
+  padding-left: 10px;
+  font-size: 25px;
+  color: rgb(36, 37, 37);
+}
+
+@media only screen and (max-width: 800px) {
+    .right {
+        background: rgb(138, 188, 138);
+        font-size: 16px;
+    }
+    nav{
+      font-size: 17px;
+    }
+    .left{
+      font-size: 20px;
+    }
+    .hide {
+          display: none;
+        }
+}
+@media only screen and (max-width: 390px) {
+    .right {
+        background: rgb(152, 198, 152);
+        font-size: 14px;
+    }
+    nav{
+      font-size: 15px;
+    }
+    .left{
+      font-size: 18px;
+    }
+    .hide {
+          display: none;
+        }
+}  
+
+.news {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        /* Style the news preview element */
+        .news-preview {
+            width: 20%;
+           
+            margin: 10px;
+            padding: 10px;
+            
+        }
+        
+        /* Style the thumbnail image */
+        .news-thumbnail {
+            max-width: 120%;
+            height: auto;
+        }
+       
+</style> 
+</head> 
+<body> 
+
+<header> 
+    <div class="logo">BIO</div>
+    <div class="logo2">life</div>    
+    <nav class="container"> 
+        <a href="#1">Home</a> 
+        <a href="#2">Services</a> 
+        <a href="#3">News</a> 
+        <a href="#4">About</a> 
+        <a href="#5">Contact</a> 
+        <a href="#6">Block Regions</a> 
+        <a href="#7">Typography</a> 
+    </nav> 
+</header> 
+
+
+    <section id="1"> 
+        <div class="right">  
+            <img class="img"   src="11.png" alt="picture 1"> 
+            <h2>Something important</h2> 
+            <p>The box model in CSS is the primary way to distribute and manage space around elements on a web page. It consists of the content part (the content of the element), the border (border), the internal margin (padding), and the external margin (margin). The box-sizing property in CSS determines how the overall width and height of an element should be calculated, taking into account its content, padding, and borders.</p> 
+        </div> 
+    </section> 
+
+    <section id="2">
+        <h2 class="left">News</h2>
+    </section> 
+    <section class="news">
+      <article class="news-preview">
+          <img  src="22.png" alt="News Thumbnail 1" class="news-thumbnail">
+          <h3>News 1</h3>
+          <p class="news-meta"> January 1, 2022 </p>
+          <p class="hide">News hscvajhsv cahvscvsjchvashjc cjvhvasjhcvaj cjashvajhsvc hcvajshvc ...</p>
+          <a href="#" class="read-more">Read More</a>
+      </article>
+
+      <article class="news-preview">
+          <img src="33.png" alt="News Thumbnail 2" class="news-thumbnail">
+          <h3>News 2</h3>
+          <p class="news-meta"> January 2, 2023 </p>
+          <p class="hide">News hscvajhsvcahvs cvsjchvashjc cjvhvasjhcvaj cjashvajhsvc hcvajshvc ...</p>
+          <a href="#" class="read-more">Read More</a>
+      </article>
+
+      <article class="news-preview">
+          <img src="44.png" alt="News Thumbnail 3" class="news-thumbnail">
+          <h3>News 3</h3>
+          <p class="news-meta"> January 3, 2024 </p>
+          <p class="hide">News hscvajhsvcahvscvsj chvashjc cjvhvasjhcvaj cjashvajhsvc hcvajshvc ...</p>
+          <a href="#" class="read-more">Read More</a>
+      </article>
+
+      <article class="news-preview">
+          <img src="55.png" alt="News Thumbnail 4" class="news-thumbnail">
+          <h3>News 4</h3>
+          <p class="news-meta"> January 4, 2024 </p>
+          <p class="hide">News hscvajhsvca hvscvsjchvashjc cjvhvasjhcvaj cjashvajhsvc hcvajshvc ...</p>
+          <a href="#" class="read-more">Read More</a>
+      </article>
+  </section>
+
+</body> 
+</html> 
