@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Owl Carousel Slider</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <style>
+    body{
+        background-color: rgb(131, 131, 211);
+    }
+    .owl-carousel .item {
+      padding: 30px;
+      background-color: rgb(197, 135, 194);
+    }
+    h2{
+       text-align: center; 
+    }
+  </style>
+</head>
+<body>
+  <div class="owl-carousel owl-theme">
+    <div class="item">
+      <h2>Explain “repaint” and “reflow” of the webpage.</h2>
+      <p>When changes are made to the layout of a webpage, the browser goes through a process known as reflow and repaint. Reflow involves calculating the layout of the elements on the page, while repaint involves drawing the pixels on the screen based on the updated layout.</p>
+      <p> Reflow is more resource-intensive as it affects not just the element being changed, but also all the elements that depend on its size or position. It can slow down the rendering process significantly. Repaint, on the other hand, is less intensive as it only affects the visual representation of the affected elements.</p>
+      <p>Optimizing the webpage to minimize reflows and repaints can improve performance and user experience.</p>
+    </div>
+    <div class="item">
+      <h2>How does JavaScript on the webpage affects the page load speed and performance?</h2>
+      <p>JavaScript can impact page load speed and performance in several ways. Excessive or poorly optimized JavaScript can lead to longer loading times, especially on slower devices or connections. Scripts that block rendering can delay the display of content to the user.</p>
+    <p> Using JavaScript frameworks and libraries can add additional overhead to the page load. Properly optimizing and deferring scripts, as well as using efficient coding practices, can help improve page load speed and performance.</p>
+    </div>
+    <div class="item">
+      <h2>What is “minification” of the script? Why it is useful to minify your scripts?</h2>
+      <p>Minification is the process of removing unnecessary characters from the source code without changing its functionality. This includes removing comments, whitespace, and shortening variable names. Minifying scripts reduces their file size, leading to faster downloads and improved loading times.</p>
+        <p>Smaller file sizes mean quicker downloads, less data to transfer between servers and clients, and reduced bandwidth usage. Minified scripts also improve browser caching efficiency, as smaller files are stored and retrieved more quickly.</p>
+    </div>
+    <div class="item">
+      <h2>What is a JS Web Worker and when do we need it?</h2>
+      <p>A JavaScript Web Worker is a browser feature that allows you to run scripts in the background, separate from the main execution thread of the webpage. Web Workers enable multi-threading in JavaScript, which is useful for handling complex tasks that may otherwise block the main thread and cause performance issues.</p>
+        <p>Web Workers are commonly used for tasks like data processing, image manipulation, and other computationally intensive operations. By offloading these operations to Web Workers, the main thread remains responsive, leading to a smoother user experience.</p>        
+        <p>Check the next slides for references used for answering these questions.</p>        
+      </div>
+    <div class="item">
+      <h2>Sources</h2>
+      <ul>
+        <li><a href="https://www.explainthis.io/en/swe/repaint-and-reflow">Repaint and Reflow</a></li>
+        <li><a href="https://www.searchenginewatch.com/2017/06/23/how-javascript-impacts-page-loading-speed-on-mobile/">JavaScript and Page Load Speed</a></li>
+        <li><a href="https://www.imperva.com/learn/performance/minification/#:~:text=Minification%20is%20the%20process%20of,into%20a%20better%20user%20experience.">Minification</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers">Web Workers</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        nav: true,
+        dots: false,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 1
+          },
+          1000: {
+            items: 1
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
